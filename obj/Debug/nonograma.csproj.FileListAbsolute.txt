@@ -1,0 +1,10 @@
+D:\Documentos\CS\nonograma\nonograma\obj\Debug\nonograma.csprojAssemblyReference.cache
+D:\Documentos\CS\nonograma\nonograma\obj\Debug\nonograma.csproj.CoreCompileInputs.cache
+D:\Documentos\CS\nonograma\nonograma\bin\Debug\nonograma.exe.config
+D:\Documentos\CS\nonograma\nonograma\bin\Debug\nonograma.exe
+D:\Documentos\CS\nonograma\nonograma\bin\Debug\nonograma.pdb
+D:\Documentos\CS\nonograma\nonograma\bin\Debug\WebDriver.dll
+D:\Documentos\CS\nonograma\nonograma\bin\Debug\WebDriver.xml
+D:\Documentos\CS\nonograma\nonograma\obj\Debug\nonograma.csproj.CopyComplete
+D:\Documentos\CS\nonograma\nonograma\obj\Debug\nonograma.exe
+D:\Documentos\CS\nonograma\nonograma\obj\Debug\nonograma.pdb
