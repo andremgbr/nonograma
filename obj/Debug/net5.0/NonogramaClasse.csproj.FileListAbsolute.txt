@@ -1,0 +1,40 @@
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.csproj.AssemblyReference.cache
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.AssemblyInfoInputs.cache
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.AssemblyInfo.cs
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.csproj.CoreCompileInputs.cache
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\NonogramaClasse.exe
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\NonogramaClasse.deps.json
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\NonogramaClasse.runtimeconfig.json
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\NonogramaClasse.runtimeconfig.dev.json
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\ref\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\NonogramaClasse.pdb
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\WebDriver.Support.dll
+D:\Documentos\CS\nonograma\NonogramaClasse\bin\Debug\net5.0\WebDriver.dll
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.csproj.CopyComplete
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\ref\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.pdb
+D:\Documentos\CS\nonograma\NonogramaClasse\obj\Debug\net5.0\NonogramaClasse.genruntimeconfig.cache
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\NonogramaClasse.exe
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\NonogramaClasse.deps.json
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\NonogramaClasse.runtimeconfig.json
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\NonogramaClasse.runtimeconfig.dev.json
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\ref\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\NonogramaClasse.pdb
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\WebDriver.Support.dll
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\bin\Debug\net5.0\WebDriver.dll
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.csproj.AssemblyReference.cache
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.AssemblyInfoInputs.cache
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.AssemblyInfo.cs
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.csproj.CoreCompileInputs.cache
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.csproj.CopyComplete
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\ref\NonogramaClasse.dll
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.pdb
+D:\Documentos\CS\nonograma\NonogramaClasse - Copia\obj\Debug\net5.0\NonogramaClasse.genruntimeconfig.cache

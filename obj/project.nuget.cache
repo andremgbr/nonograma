@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "h1S6wa7ZACGelAQMBuE+EqAT5NMgZN1ZsUwlcrQI+z6KTnsipLykOp1YObJpd4a5RHoGDhqt4NExOlrnx7ySaA==",
+  "success": true,
+  "projectFilePath": "D:\\Documentos\\CS\\nonograma\\NonogramaClasse - Copia\\NonogramaClasse.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andre\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\selenium.support\\4.1.0\\selenium.support.4.1.0.nupkg.sha512",
+    "C:\\Users\\Andre\\.nuget\\packages\\selenium.webdriver\\4.1.0\\selenium.webdriver.4.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
