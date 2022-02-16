@@ -7,21 +7,24 @@ using NonogramaClasse;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
+using System.Diagnostics;
+using System.IO;
 
 namespace NonogramaClasse
 {
-    class Program
+    class Program 
     {
+        public int count = 0;
         static void Main(string[] args)
         {
 
-            var driver = new ChromeDriver(@"D:\Documentos\CS\nonograma\nonograma\chromedriver_win32");
+            var driver = new ChromeDriver(@"D:\Documentos\CS\nonograma\NonogramaClasse\chromedriver_win32");
             driver.Navigate().GoToUrl("https://www.nonograms.org/");
             char sContinue = 's';
 
             while (sContinue == 's')
             {
-
+                Console.Clear();
                 Console.WriteLine("\n\nPronto para carregar a página, Pressiona Enter para continar");
                 Console.ReadLine();
 
@@ -74,13 +77,14 @@ namespace NonogramaClasse
 
                 Order ordem_game = new(rulesH, rulesV);
 
-                board game = new(rulesH, rulesV);
+                board game = new(rulesH, rulesV, ordem_game);
 
-                game.ruleH = rulesH; //@TODO Instanciar no board
-                game.ruleV = rulesV; //@TODO Instanciar no board
-                game.orderGame = ordem_game; //@TODO Instanciar no board
+                //game.ruleH = rulesH; //@TODO Instanciar no board
+                //game.ruleV = rulesV; //@TODO Instanciar no board
+                //game.orderGame = ordem_game; //@TODO Instanciar no board
                 //@TODO Criar Classe pai e incluir o void Print que é comume em Order, Rule, Board
 
+                Console.Clear();
                 Console.WriteLine("\n\nRegras Horizontais");
                 game.ruleH.Print();
 
@@ -93,11 +97,16 @@ namespace NonogramaClasse
                 Console.WriteLine("\n\nPressione Enter para Resolver");
                 Console.ReadLine();
 
+                Stopwatch stopWatch = new Stopwatch();
+                stopWatch.Start();
                 Console.WriteLine("\n\nResolvendo.....");
                 game.solver();
 
+                stopWatch.Stop();
+                TimeSpan ts = stopWatch.Elapsed;
+
                 game.Print();
-                Console.WriteLine("Game Resolvido! Pressione Enter para prencher a grade!");
+                Console.WriteLine($"Game Resolvido em {ts.Minutes}:{ts.Seconds}! Pressione Enter para prencher a grade!");
                 Console.ReadLine();
 
 
@@ -115,7 +124,7 @@ namespace NonogramaClasse
                     }
                 }
 
-                Console.WriteLine("Desejá fazer Outro? s/n");
+                Console.WriteLine("Deseja fazer Outro? s/n");
                 sContinue = Console.ReadKey().KeyChar;
 
             }

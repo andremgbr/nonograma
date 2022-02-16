@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documentos\\CS\\nonograma\\NonogramaClasse - Copia\\NonogramaClasse.csproj": {}
+    "D:\\Documentos\\CS\\nonograma\\NonogramaClasse\\NonogramaClasse.csproj": {}
   },
   "projects": {
-    "D:\\Documentos\\CS\\nonograma\\NonogramaClasse - Copia\\NonogramaClasse.csproj": {
+    "D:\\Documentos\\CS\\nonograma\\NonogramaClasse\\NonogramaClasse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documentos\\CS\\nonograma\\NonogramaClasse - Copia\\NonogramaClasse.csproj",
+        "projectUniqueName": "D:\\Documentos\\CS\\nonograma\\NonogramaClasse\\NonogramaClasse.csproj",
         "projectName": "NonogramaClasse",
-        "projectPath": "D:\\Documentos\\CS\\nonograma\\NonogramaClasse - Copia\\NonogramaClasse.csproj",
+        "projectPath": "D:\\Documentos\\CS\\nonograma\\NonogramaClasse\\NonogramaClasse.csproj",
         "packagesPath": "C:\\Users\\Andre\\.nuget\\packages\\",
-        "outputPath": "D:\\Documentos\\CS\\nonograma\\NonogramaClasse - Copia\\obj\\",
+        "outputPath": "D:\\Documentos\\CS\\nonograma\\NonogramaClasse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

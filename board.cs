@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace NonogramaClasse
 {
-    class board
+    class board : Grid
     {
-        public int [,] grid;
 
         public Rule ruleH;
         public Rule ruleV;
         public Order orderGame;
 
-        public board(Rule ruleH, Rule ruleV)
+        public board(Rule ruleH, Rule ruleV, Order orderGame)
         {
             this.grid = new int[ruleH.Length(), ruleV.Length()];
 
@@ -25,35 +24,11 @@ namespace NonogramaClasse
                     this.grid[i, j] = -1;
                 }
             }
+
+            this.ruleH = ruleH;
+            this.ruleV = ruleV;
+            this.orderGame = orderGame;
         }
-
-        public void Print()
-        {
-            for (int i = 0; i < this.grid.GetLength(0); i++)
-            {
-                for (int j = 0; j < this.grid.GetLength(1); j++)
-                {
-                    if (this.grid[i, j] == -1)
-                    {
-                        Console.Write('-');
-                    }
-                    else
-                    {
-                        Console.Write(this.grid[i, j]);
-                    }
-
-
-                    if (j < this.grid.GetLength(1) - 1)
-                    {
-                        Console.Write(" , ");
-                    }
-                }
-                Console.Write("\n");
-            }
-            Console.Write("\n");
-        }
-
-        /*int[,] board, int[,] order*/
         int[] get_empty()
         {
             for (int ord = 1; ord <= this.orderGame.grid.GetLength(0); ord++)
@@ -96,8 +71,6 @@ namespace NonogramaClasse
 
             return new int[] { -5 };
         }
-
-        /*int[,] board, int[,] rh, int[,] rv, int[,] order*/
         public bool solver()
         {
             int[] pos = get_empty();
@@ -106,7 +79,7 @@ namespace NonogramaClasse
                 for (int x = 0; x < 2; x++)
                 {
                     this.grid[pos[0], pos[1]] = x;
-/*                    if (con % 1000000 == 0)
+        /*            if (prog.count % 1000000 == 0)
                     {
 
                         Console.Clear();
@@ -133,15 +106,11 @@ namespace NonogramaClasse
             }
             else
             {
-                /*Console.WriteLine("TERMINOU, Pressione Enter para preencher na página!.");
-                Print();*/
-                //insert_board(board);
                 return true;
             }
 
         }
 
-        /*bool valido(int x, int[,] table, int[] pos, int[,] rh, int[,] rv)*/
         bool valido(int x, int[,] table, int[] pos, int[,] rh, int[,] rv)
         {
             table[pos[0], pos[1]] = x;
@@ -231,6 +200,10 @@ namespace NonogramaClasse
 
         bool check_row(int[] row, int[] rule)
         {
+            if (row.Sum() != rule.Sum())
+            {
+                return false;
+            }
             if (space(rule) == 0)
             {
                 for (int x = 0; x < rule.GetLength(0); x++)
@@ -289,6 +262,7 @@ namespace NonogramaClasse
                 int[] clean_rule = Remove_zero_row(rule);
                 int last_pos = 0;
                 int esp = space(rule);
+
                 for (int x = 0; x <= esp; x++)
                 {
                     bool val = true;
