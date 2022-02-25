@@ -18,7 +18,76 @@ namespace NonogramaClasse
         static void Main(string[] args)
         {
 
-            var driver = new ChromeDriver(@"D:\Documentos\CS\nonograma\NonogramaClasse\chromedriver_win32");
+            //Processo de Carregar página no Selenium
+            WebNonogram();
+            
+            //Processo de Inserir Regra Manualmente
+            //ManualNonogram();
+
+        }
+
+        static void ManualNonogram()
+        {
+            Rule rulesH = new(11, 5);
+            rulesH.grid = new int[,]  { { 2,3,3,0,0 }, 
+                                        { 2,2,0,0,0 },
+                                        { 1,2,2,1,0 },
+                                        { 1,1,1,1,1 },
+                                        { 1,3,3,0,0 },
+                                        { 1,1,1,0,0 },
+                                        { 1,2,2,0,0 },
+                                        { 1,1,0,0,0 },
+                                        { 2,3,2,0,0 },
+                                        { 1,1,1,0,0 },
+                                        { 1,5,0,0,0 } };
+            
+            Rule rulesV = new(11, 4);
+            rulesV.grid = new int[,]  { { 1,1,2,1 },
+                                        { 2,3,1,0 },
+                                        { 1,2,2,0 },
+                                        { 1,1,1,1 },
+                                        { 1,3,1,1 },
+                                        { 1,1,1,1 },
+                                        { 4,1,1,0 },
+                                        { 1,1,1,1 },
+                                        { 1,3,2,0 },
+                                        { 2,3,0,0 },
+                                        { 3,2,0,0 } };
+
+            Order ordem_game = new(rulesH, rulesV);
+
+            board game = new(rulesH, rulesV, ordem_game);
+
+            Console.Clear();
+            Console.WriteLine("\n\nRegras Horizontais");
+            game.ruleH.Print();
+
+            Console.WriteLine("\n\nRegras Verticais");
+            game.ruleV.Print();
+
+            Console.WriteLine("\n\nOrdem de Solução");
+            game.orderGame.Print();
+
+            Console.WriteLine("\n\nPressione Enter para Resolver");
+            Console.ReadLine();
+
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            Console.WriteLine("\n\nResolvendo.....");
+            game.solver();
+
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
+
+            game.Print();
+            Console.WriteLine($"Game Resolvido em {ts.Minutes}:{ts.Seconds}! Pressione Enter para encerrar!");
+            Console.ReadLine();
+        }
+
+        static void WebNonogram()
+        {
+            string path = Directory.GetCurrentDirectory();
+            var driver = new ChromeDriver(path+@"\chromedriver_win32");
             driver.Navigate().GoToUrl("https://www.nonograms.org/");
             char sContinue = 's';
 
@@ -78,11 +147,6 @@ namespace NonogramaClasse
                 Order ordem_game = new(rulesH, rulesV);
 
                 board game = new(rulesH, rulesV, ordem_game);
-
-                //game.ruleH = rulesH; //@TODO Instanciar no board
-                //game.ruleV = rulesV; //@TODO Instanciar no board
-                //game.orderGame = ordem_game; //@TODO Instanciar no board
-                //@TODO Criar Classe pai e incluir o void Print que é comume em Order, Rule, Board
 
                 Console.Clear();
                 Console.WriteLine("\n\nRegras Horizontais");

@@ -71,6 +71,7 @@ namespace NonogramaClasse
 
             return new int[] { -5 };
         }
+
         public bool solver()
         {
             int[] pos = get_empty();
@@ -198,7 +199,7 @@ namespace NonogramaClasse
             return result;
         }
 
-        bool check_row(int[] row, int[] rule)
+        public bool check_row(int[] row, int[] rule)
         {
             if (row.Sum() != rule.Sum())
             {
