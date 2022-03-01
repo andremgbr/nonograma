@@ -18,8 +18,10 @@ namespace NonogramaClasse
         static void Main(string[] args)
         {
 
-            var driver = new ChromeDriver(@"D:\Documentos\CS\nonograma\NonogramaClasse\chromedriver_win32");
+            string path = Directory.GetCurrentDirectory();
+            var driver = new ChromeDriver(path + @"\chromedriver_win32");
             driver.Navigate().GoToUrl("https://www.nonograms.org/");
+
             char sContinue = 's';
 
             while (sContinue == 's')
