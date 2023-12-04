@@ -18,7 +18,7 @@ namespace NonogramaClasse
                 {
                     if (this.grid[i, j] == -1)
                     {
-                        Console.Write('-');
+                        Console.Write(' - ');
                     }
                     else
                     {
